@@ -42,3 +42,9 @@ ul {
     flex-direction: column;
     align-items: center;
 }
+
+@media (screen-width < screen-height) {
+    .content {
+        width: 60%;
+    }
+}
