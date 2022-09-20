@@ -1,0 +1,29 @@
+.skill-list-wrapper {
+    width: 90%;
+
+    overflow-y: scroll;
+}
+
+.skill-list {
+    padding: 0;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.skill {
+    width: 90px;
+    padding: 1rem 0.5rem;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: var(--border-radius);
+
+    border: var(--border);
+}
+
+.skill img {
+    width: 85px;
+}

@@ -1,0 +1,25 @@
+.showoff {
+    width: 100%;
+}
+
+.project-list {
+    margin: 0;
+    padding: 0;
+
+    margin-top: 1rem;
+    width: 90%;
+}
+
+.project {
+    border-radius: var(--border-radius);
+    border: var(--border);
+
+    width: 80%;
+
+    max-height: 100px;
+}
+
+.project ul {
+    display: flex;
+    flex-direction: row;
+}
