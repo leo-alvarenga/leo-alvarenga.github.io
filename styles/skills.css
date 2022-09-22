@@ -2,6 +2,10 @@
     width: 90%;
 }
 
+.skill-list-wrapper .title {
+    text-align: center;
+}
+
 .skill-list {
     padding: 0.5rem 0.5rem 2rem 0.5rem;
 
@@ -29,6 +33,7 @@
 }
 
 .skill:hover {
+    background-color: var(--terciary);
     transform: scale(1.05);
     box-shadow: var(--shadow);
 }

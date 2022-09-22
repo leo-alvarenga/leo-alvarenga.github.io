@@ -6,5 +6,19 @@
     "locale-button": {
         "pt-br": "See in English",
         "en-us": "Veja em Português"
-    }
+    },
+    "titles": [
+        {
+            "pt-br": "Entre em contato",
+            "en-us": "Contact me"
+        },
+        {
+            "pt-br": "Tecnologias",
+            "en-us": "Technologies"
+        },
+        {
+            "pt-br": "Projetos",
+            "en-us": "Projects"
+        }
+    ]
 }

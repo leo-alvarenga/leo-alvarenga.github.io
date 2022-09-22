@@ -42,7 +42,7 @@ function renderProjects() {
         title.innerText = capitalize(proj.title);
 
         desc = document.createElement('p');
-        desc.innerText = normalizeText(proj.description[getLanguage()], maxDescLen);
+        desc.innerText = proj.description[getLanguage()];
 
         techlist = document.createElement('ul');
         proj.tech.forEach(t => {

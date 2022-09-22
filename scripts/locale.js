@@ -35,6 +35,8 @@ function usePt () {
 function loadContent() {
     var desc = document.getElementsByClassName('desc')[0];
     var changelang = document.getElementsByClassName('change-language')[0];
+    var titles = document.getElementsByClassName('title');
+
     var lang = getLanguage();
 
     changelang.onclick = () => usePt() ? changeLanguage('en-us') : changeLanguage('pt-br');
@@ -42,8 +44,13 @@ function loadContent() {
     fetch('/content/profile.json')
         .then(res => res.json())
         .then(json => {
-            desc.innerText = json.description[lang]; 
+            desc.innerHTML += json.description[lang]; 
             changelang.innerHTML += json["locale-button"][lang]
+
+            var t = json.titles;
+            t.forEach((title, i) => {
+                titles[i].innerHTML += title[lang];
+            });
         })
         .catch(err => {
             console.error(err)

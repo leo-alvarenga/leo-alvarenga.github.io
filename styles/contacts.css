@@ -1,0 +1,22 @@
+.contacts {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 1rem;
+    padding: 0;
+
+    width: 90%;
+
+    padding-bottom: 2rem;
+}
+
+.contact {
+    transition: all 500ms var(--transition-animation);
+}
+
+.contact:hover {
+    transform: scale(1.05);
+}
