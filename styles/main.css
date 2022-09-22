@@ -1,20 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
 :root {
-    --primary: #371B58;
-    --secondary: #4C3575;
-    --terciary: #5B4B8A;
-    --accent: #7858A6;
-    --text: #fafafa;
+    --secondary: rgb(30, 30, 30);
+    --primary: #111111ff;
+    --terciary: #333333ff;
+    --text: #ffffffff;
+    --accent: #ea558dff;
+    --accent-alt: #0761d1ff;
+
     --border-radius: 8px;
-    --border: solid 2px var(--accent);
+    --border: solid 1px var(--accent);
+    --shadow: rgba(234, 85, 141, 0.19) 0px 10px 20px, rgba(234, 85, 141, 0.23) 0px 6px 6px;
+
+    --transition-animation: cubic-bezier(.68, -0.55, .27, 1.55);
+}
+
+html::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+html::-webkit-scrollbar-track {
+    background-color: rgb(190, 190, 190);
+}
+
+html::-webkit-scrollbar-thumb {
+    background: #797979;
+    border-radius: 10px;
 }
 
 body {
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
 
     background-color: var(--primary);
     color: var(--text);
-    min-width: 100%;
+    width: 100%;
 }
 
 .column {
@@ -33,7 +54,7 @@ ul {
 
 .content {
     width: 40%;
-    padding: 1rem;
+    padding: 1rem 1rem 2rem 1rem;
 
     background-color: var(--secondary);
     border-radius: var(--border-radius);
@@ -41,10 +62,34 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    box-shadow: var(--shadow);
 }
 
-@media (screen-width < screen-height) {
+.change-language {
+    align-self: flex-start;
+
+    display: inline-flex;
+    align-items: center;
+
+    border: var(--border);
+    border-radius: var(--border-radius);
+
+    background-color: var(--primary);
+    color: var(--text);
+
+    transition: all 500ms var(--transition-animation);
+}
+
+.change-language:hover {
+    background-color: var(--terciary);
+    
+    transform: scale(1.05) translateY(-0.9);
+    box-shadow: var(--shadow);
+}
+
+@media (max-width: 600px) {
     .content {
-        width: 60%;
+        width: 90%;
     }
 }

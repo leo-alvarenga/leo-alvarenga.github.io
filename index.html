@@ -9,16 +9,27 @@
     <link rel="stylesheet" href="./styles/profile.css">
     <link rel="stylesheet" href="./styles/skills.css">
     <link rel="stylesheet" href="./styles/projects.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 
     <title>Leonardo's porfolio</title>
 </head>
 <body>
     <div class="wrapper column">
         <div class="content">
+            <button class="change-language">
+                <span class="material-symbols-outlined">
+                    bolt
+                </span>
+            </button>
+            
             <div class="profile column">
                 <div class="header column">
-                    <img class="profile-pic" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original.svg" alt="profile picture">
-                    <h1 class="name">Leonardo A. Alvarenga</h1>
+                    <div class="profile-pic-wrapper">
+                        <img class="profile-pic" src="./assets/pfp.jpg" alt="profile picture">
+                        <img class="lil-badge" src="./assets/docker-go.png" alt="little badge">
+                    </div>
+
+                    <h2 class="name">Leonardo A. Alvarenga</h2>
                     
                     <h4 class="desc"></h4>
                 </div>
@@ -34,6 +45,8 @@
         </div>
     </div>
 
+    <script src="./scripts/locale.js"></script>
     <script src="./scripts/skills.js"></script>
+    <script src="./scripts/projects.js"></script>
 </body>
 </html>

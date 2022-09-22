@@ -1,14 +1,14 @@
 .skill-list-wrapper {
     width: 90%;
-
-    overflow-y: scroll;
 }
 
 .skill-list {
-    padding: 0;
+    padding: 0.5rem 0.5rem 2rem 0.5rem;
 
     display: flex;
     flex-direction: row;
+
+    overflow-y: scroll;
 
     gap: 1rem;
 }
@@ -24,6 +24,13 @@
     border-radius: var(--border-radius);
 
     border: var(--border);
+
+    transition: all 0.5s var(--transition-animation);
+}
+
+.skill:hover {
+    transform: scale(1.05);
+    box-shadow: var(--shadow);
 }
 
 .skill img {

@@ -7,7 +7,9 @@
     padding: 0;
 
     margin-top: 1rem;
-    width: 90%;
+    width: 100%;
+
+    gap: 2rem;
 }
 
 .project {
@@ -16,10 +18,49 @@
 
     width: 80%;
 
-    max-height: 100px;
+    max-height: 200px;
+
+    transition: all 0.5s ease;
+}
+
+.project:hover {
+    transform: scale(1.05);
+    box-shadow: var(--shadow);
+}
+
+.project a {
+    text-decoration: none;
+    color: var(--text);
+}
+
+.project h4 {
+    margin-left: 1rem;
+}
+
+.project p {
+    padding: 0.5rem;
 }
 
 .project ul {
+    padding: 0 0 0.5rem 0.5rem;
+
     display: flex;
     flex-direction: row;
+
+    width: 98%;
+    height: 40px;
+
+    gap: 0.5rem;
+
+    overflow-y: scroll;
+}
+
+.project img {
+    width: 30px;
+}
+
+@media (max-width: 600px) {
+    .project {
+        width: 95%;
+    }
 }
