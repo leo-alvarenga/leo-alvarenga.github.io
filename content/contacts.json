@@ -1,0 +1,20 @@
+[
+    {
+        "title": "E-mail",
+        "icon": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg",
+        "alt": "Me contate por E-mail",
+        "href": "mailto:leonardo.a.alvarenga@gmail.com"
+    },
+    {
+        "title": "LinkedIn",
+        "icon": "https://raw.githubusercontent.com/devicons/devicon/master/icons/linkedin/linkedin-original.svg",
+        "alt": "Me contate pelo LinkedIn",
+        "href": "https://www.linkedin.com/in/leonardo-a-alvarenga/"
+    },
+    {
+        "title": "GitHub",
+        "icon": "https://logodix.com/logo/64439.png",
+        "alt": "Me contate pelo GitHub",
+        "href": "https://github.com/leo-alvarenga/"
+    }
+]

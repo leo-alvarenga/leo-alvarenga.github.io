@@ -33,6 +33,9 @@ body {
     margin: 0;
     padding: 0;
 
+    user-select: none;
+    -webkit-user-select: none;
+
     background-color: var(--primary);
     color: var(--text);
     width: 100%;
@@ -84,8 +87,12 @@ ul {
 .change-language:hover {
     background-color: var(--terciary);
     
-    transform: scale(1.05) translateY(-0.9);
+    transform: scale(1.05);
     box-shadow: var(--shadow);
+}
+
+.divider {
+    border-bottom: solid 1px var(--accent);
 }
 
 @media (max-width: 600px) {
