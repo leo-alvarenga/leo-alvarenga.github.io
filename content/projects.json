@@ -9,6 +9,15 @@
         "tech": ["Go", "Html", "Css", "Js"]
     },
     {
+        "title": "Dotfiles",
+        "description": {
+            "pt-br": "Repositório destinado a armazenar meus arquivos de configuração de sistema",
+            "en-us": "A repo meant to be where I store my config files"
+        },
+        "repo": "https://github.com/leo-alvarenga/dotfiles",
+        "tech": ["Lua", "Bash"]
+    },
+    {
         "title": "Guia do Universitário",
         "description":  {
             "pt-br": "Um blog simples com foco no auxílio ao estudante universitário contruído com o MERN stack",

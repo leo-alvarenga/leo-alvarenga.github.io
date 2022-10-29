@@ -1,10 +1,10 @@
-var skills = {};
+let skills = {};
 
-function capitalize(str) {
+const capitalize = (str) => {
     return str[0].toUpperCase() + str.slice(1);
 }
 
-function getSkills() {
+const getSkills = () => {
     fetch('/content/skills.json')
         .then(res => res.json())
         .then(json => {
@@ -18,13 +18,19 @@ function getSkills() {
         });
 }
 
-function renderSkills() {
-    var list = document.getElementsByClassName('skill-list')[0];
+const renderSkills = () => {
+    let list = document.getElementsByClassName('skill-list')[0];
 
-    var s, i, n;
+    let s, i, n;
+
+    // skills I am not familiar with enough to add them to the list
+    const exceptions = ["Lua", "Bash", "Next.Js"];
+    // need to re-learn Next, now that v13 is out 🥲
 
     for (field in skills) {
-        var skill = skills[field];
+        if (exceptions.includes(field)) continue;
+
+        let skill = skills[field];
     
         s = document.createElement('li');
         i = document.createElement('img');

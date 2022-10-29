@@ -1,17 +1,16 @@
-var projects = [];
+let projects = [];
 
-function normalizeText(text, maxLen) {
+const normalizeText = (text, maxLen) => {
     if (!text)
         return '';
 
-    if (text.length >= maxLen - 3) {
+    if (text.length >= maxLen - 3)
         return text.slice(0, maxLen - 4) + '...';
-    }
 
     return text;
 }
 
-function getProjects() {
+const getProjects = () => {
     fetch('/content/projects.json')
         .then(res => res.json())
         .then(json => {
@@ -24,14 +23,12 @@ function getProjects() {
         });
 }
 
-function renderProjects() {
-    var list = document.getElementsByClassName('project-list')[0];
+const renderProjects = () => {
+    let list = document.getElementsByClassName('project-list')[0];
 
-    var maxDescLen = window.innerWidth > 600 ? 80 : 60;
-
-    var title, desc, repo, techlist;
+    let title, desc, repo, techlist;
     projects.forEach(proj => {
-        var item = document.createElement('li');
+        let item = document.createElement('li');
         item.className = 'project';
 
         repo = document.createElement('a');
@@ -46,9 +43,9 @@ function renderProjects() {
 
         techlist = document.createElement('ul');
         proj.tech.forEach(t => {
-            var i = document.createElement('li')
+            let i = document.createElement('li')
             
-            var img = document.createElement('img');
+            let img = document.createElement('img');
             img.src = skills[t];
 
             i.appendChild(img);
