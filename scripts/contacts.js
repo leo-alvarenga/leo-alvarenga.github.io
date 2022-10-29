@@ -2,9 +2,9 @@ function getContacts() {
     fetch("/content/contacts.json")
         .then(res => res.json())
         .then(json => {
-            var contacts = document.getElementsByClassName('contacts')[0];
+            let contacts = document.getElementsByClassName('contacts')[0];
 
-            var item, a, img;
+            let item, a, img;
             json.forEach(c => {
                 item = document.createElement('li');
                 item.className = 'contact'

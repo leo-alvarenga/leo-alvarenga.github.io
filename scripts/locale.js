@@ -1,4 +1,4 @@
-function changeLanguage(lang) {
+const changeLanguage = (lang) => {
     try {
         if (lang === 'en-us') {
             localStorage.setItem('lang', lang);
@@ -12,8 +12,8 @@ function changeLanguage(lang) {
     }
 }
 
-function getLanguage() {
-    var lang;
+const getLanguage = () => {
+    let lang;
 
     try {
         lang = localStorage.getItem('lang');
@@ -28,16 +28,16 @@ function getLanguage() {
     return lang;
 }
 
-function usePt () {
+const usePt = () => {
     return getLanguage() === 'pt-br';
 }
 
-function loadContent() {
-    var desc = document.getElementsByClassName('desc')[0];
-    var changelang = document.getElementsByClassName('change-language')[0];
-    var titles = document.getElementsByClassName('title');
+const loadContent = () => {
+    let desc = document.getElementsByClassName('desc')[0];
+    let changelang = document.getElementsByClassName('change-language')[0];
+    let titles = document.getElementsByClassName('title');
 
-    var lang = getLanguage();
+    const lang = getLanguage();
 
     changelang.onclick = () => usePt() ? changeLanguage('en-us') : changeLanguage('pt-br');
 
@@ -47,7 +47,7 @@ function loadContent() {
             desc.innerHTML += json.description[lang]; 
             changelang.innerHTML += json["locale-button"][lang]
 
-            var t = json.titles;
+            let t = json.titles;
             t.forEach((title, i) => {
                 titles[i].innerHTML += title[lang];
             });
