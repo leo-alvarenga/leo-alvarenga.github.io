@@ -29,7 +29,7 @@
 }
 
 .profile-pic {
-    width: 200px;
+    width: 300px;
     border-radius: 50%;
 
     box-shadow: 0 0 .2rem var(--text),
@@ -46,23 +46,6 @@
 
 .profile-pic-wrapper {
     position: relative;
-}
-
-.lil-badge, .company {
-    position: absolute;
-    left: 75%;
-    top: 60%;
-    
-    border-radius: 50%;
-    height: 60px;
-    
-    padding: 0;
-    transition: all 0.5s var(--transition-animation);
-}
-
-.lil-badge:hover {
-    transform: scale(1.1);
-    box-shadow: var(--shadow);
 }
 
 @keyframes flicker {
