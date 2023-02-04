@@ -1,12 +1,12 @@
 import { BrowserRouter, Route } from "react-router-dom";
 
-import { HomePage, NotFoundPage } from "../pages";
+import { Home, NotFound } from "../pages";
 
 function Router() {
   return (
     <BrowserRouter>
-      <Route path="/" component={HomePage} exact />
-      <Route path="/*" component={NotFoundPage} />
+      <Route path="/" component={Home} exact />
+      <Route path="/*" component={NotFound} />
     </BrowserRouter>
   );
 }

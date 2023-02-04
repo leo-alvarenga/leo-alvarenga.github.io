@@ -1,0 +1,19 @@
+{
+  "locales": {
+    "shared": {
+      "shell": {
+        "ps1": "leo@portfolio",
+        "ps2": "~ $",
+        "welcome": {
+          "command": "echo \"Welcome!\"",
+          "output": "Welcome!"
+        }
+      }
+    },
+    "page": {
+      "home": {
+        "subtitles": "CS Student at UFV, Intern Front-end Developer at Vetta, GNU/Linux enthusiast and passionate about Web development"
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "locales": {
+    "shared": {
+      "shell": {
+        "ps1": "leo@portfolio",
+        "ps2": "~ $",
+        "welcome": {
+          "command": "echo \"Bem vindo(a)!\"",
+          "output": "Bem vindo(a)!"
+        }
+      }
+    },
+    "page": {
+      "home": {
+        "subtitles": "Graduando em Ciência da Computação pela UFV, Desenvolvedor Front-end Estagiário na Vetta, entusista de GNU/Linux e apaixonado por desenvolvimento Web"
+      }
+    }
+  }
+}

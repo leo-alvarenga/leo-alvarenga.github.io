@@ -1,8 +1,50 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./index.html', './src/**/*.{js,jsx,ts,tsx}',],
+  content: ['./index.html', './src/**/*.{js,jsx,ts,tsx}'],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        black1: '#151314',
+        black2: '#1f1c1e',
+        gray1: '#312c2f',
+        gray2: '#4b4447',
+        gray3: '#6b6166',
+        gray4: '#91858b',
+        gray5: '#b8b0b4',
+        white1: '#e4e2e3',
+        pink1: '#f785cb',
+        pink2: '#fd8ad0',
+        purple1: '#e782c0',
+        purple2: '#c1b7f3',
+        blue1: '#006599',
+        green1: '#42aa81',
+        green2: '#51e1aa',
+        green3: '#b2be27',
+        salmon1: '#f8b090',
+
+        foreground: '#d4d0d3',
+        background: '#0c0a0b'
+      },
+
+      animation: {
+        blink: 'blinking 1s linear infinite'
+      },
+
+      keyframes: {
+        blinking: {
+          '0%, 100%': {
+            opacity: '1'
+          },
+          '50%': {
+            opacity: '0'
+          }
+        }
+      },
+
+      fontFamily: {
+        term: ['Anonymous Pro', 'monospace']
+      }
+    }
   },
-  plugins: [],
+  plugins: []
 }
