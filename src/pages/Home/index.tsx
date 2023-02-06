@@ -1,5 +1,10 @@
-import { Page, Profile } from "../../components";
-import { SkillList, ProjectList } from "../../components";
+import {
+  Page,
+  Profile,
+  SkillList,
+  ProjectList,
+  ContactList,
+} from "../../components";
 
 function Home() {
   return (
@@ -7,6 +12,7 @@ function Home() {
       <>
         <Profile />
         <SkillList />
+        <ContactList />
         <ProjectList />
       </>
     </Page>

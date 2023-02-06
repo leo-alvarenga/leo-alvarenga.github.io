@@ -3,6 +3,9 @@ module.exports = {
   content: ['./index.html', './src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     extend: {
+      fill: {
+        'force-fore': 'filter: invert(100%) sepia(25%) saturate(388%) hue-rotate(275deg) brightness(86%) contrast(92%)'
+      },
       colors: {
         black1: '#151314',
         black2: '#1f1c1e',

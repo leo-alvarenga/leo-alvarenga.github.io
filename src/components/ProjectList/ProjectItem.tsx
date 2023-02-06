@@ -15,7 +15,7 @@ function ProjectItem({ name, description, repo, stack }: ProjectItemProps) {
   return (
     <li
       key={name}
-      className="w-[80%] max-xl:w-[95%] bg-background rounded-lg hover:translate-y-1 hover:scale-110 transition"
+      className="w-full drop-shadow-lg bg-background rounded-lg hover:bg-black1 hover:translate-y-1 hover:scale-110 transition"
     >
       <a
         href={repo}
@@ -35,11 +35,7 @@ function ProjectItem({ name, description, repo, stack }: ProjectItemProps) {
 
             return (
               <li>
-                <Tooltip
-                  content={item.name}
-                  placement="bottom"
-                  background="black1"
-                >
+                <Tooltip content={item.name}>
                   <img
                     className="w-8 hover:scale-110 transition-all"
                     src={item.icon}

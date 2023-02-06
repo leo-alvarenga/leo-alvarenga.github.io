@@ -10,7 +10,7 @@ function SkillList() {
         flex flex-row gap-4
         flex-wrap justify-between 
         list-none rounded-lg p-2
-        w-[70%] max-xl:w-[90%]
+        w-[70%] max-xl:w-full
         drop-shadow-lg 
       `}
     >

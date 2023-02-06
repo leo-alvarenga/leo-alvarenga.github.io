@@ -15,6 +15,9 @@
       "projects": {
         "title": "Relevant personal projects",
         "seeMore": "See more"
+      },
+      "contacts": {
+        "title": "Contact me"
       }
     },
     "page": {
