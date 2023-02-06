@@ -7,12 +7,39 @@
         "welcome": {
           "command": "echo \"Bem vindo(a)!\"",
           "output": "Bem vindo(a)!"
+        },
+        "exit": {
+          "command": "exit"
         }
+      },
+      "projects": {
+        "title": "Projetos pessoais relevantes",
+        "seeMore": "Veja mais"
       }
     },
     "page": {
       "home": {
-        "subtitles": "Graduando em Ciência da Computação pela UFV, Desenvolvedor Front-end Estagiário na Vetta, entusista de GNU/Linux e apaixonado por desenvolvimento Web"
+        "subtitles": "Graduando em Ciência da Computação pela UFV, Desenvolvedor Front-end Estagiário na Vetta, entusiasta de GNU/Linux e apaixonado por desenvolvimento Web"
+      }
+    },
+    "static": {
+      "projects": {
+        "crcalc": {
+          "name": "Calculadora CR",
+          "description": "Uma Calculadora de CR (Coeficiente de Rendimento) e CRA (Coeficiente de Rendimento Acumulado)"
+        },
+        "dotfiles": {
+          "name": "Dotfiles",
+          "description": "Repositório destinado a armazenar meus arquivos de configuração de sistema"
+        },
+        "togo": {
+          "name": "To go",
+          "description": "Um app poderoso, leve e confiável baseado em linha de comando para controle de tarefas capaz de servir um front-end web localmente"
+        },
+        "uniguide": {
+          "name": "Guia do Universitário",
+          "description": "Um blog simples com foco no auxílio ao estudante universitário contruído com o MERN stack"
+        }
       }
     }
   }

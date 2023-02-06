@@ -7,12 +7,39 @@
         "welcome": {
           "command": "echo \"Welcome!\"",
           "output": "Welcome!"
+        },
+        "exit": {
+          "command": "exit"
         }
+      },
+      "projects": {
+        "title": "Relevant personal projects",
+        "seeMore": "See more"
       }
     },
     "page": {
       "home": {
         "subtitles": "CS Student at UFV, Intern Front-end Developer at Vetta, GNU/Linux enthusiast and passionate about Web development"
+      }
+    },
+    "static": {
+      "projects": {
+        "crcalc": {
+          "name": "CR Calculator",
+          "description": "A simple CR & CRA (brazilian GPA counterpart) calculator"
+        },
+        "dotfiles": {
+          "name": "Dotfiles",
+          "description": "A repo meant to be where I store my config files"
+        },
+        "togo": {
+          "name": "To go",
+          "description": "A powerful, lightweight and reliable CLI based to-do tracker capable of serving a web front-end locally"
+        },
+        "uniguide": {
+          "name": "Uni. Student Guide",
+          "description": "A simple MERN stack blog that aims at providing relevant info to uni students"
+        }
       }
     }
   }

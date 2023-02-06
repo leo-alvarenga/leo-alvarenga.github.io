@@ -13,16 +13,20 @@ function LangButton({ value, selected, onClick }: LangButtonProps) {
   );
 
   const className = useMemo(() => {
-    let base =
-      "px-2 py-1 text-background hover:-translate-y-1 hover:scale-110 transition-all ";
+    let base = "px-2 py-1 hover:-translate-y-1 hover:scale-110 transition-all ";
 
-    if (selected) return base.concat("bg-green1 hover:bg-green1 active:green1");
+    if (selected)
+      return base.concat(
+        "text-background bg-green3 hover:bg-green3 active:green3"
+      );
 
-    return base.concat("bg-green2 hover:bg-green1 active:bg-green1");
+    return base.concat(
+      "text-background bg-foreground hover:bg-green3 active:bg-green3"
+    );
   }, [selected]);
 
   return (
-    <button className={className} onClick={() => onClick(value)}>
+    <button key={value} className={className} onClick={() => onClick(value)}>
       {label}
     </button>
   );

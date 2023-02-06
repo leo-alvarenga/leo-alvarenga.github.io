@@ -1,7 +1,8 @@
+import { ReactNode } from "react";
 import { useTranslation } from "react-i18next";
 
 export interface PSProps {
-  args?: string;
+  args?: string | ReactNode;
   disableBliker?: boolean;
 }
 
@@ -13,10 +14,12 @@ function PS({ args, disableBliker }: PSProps) {
       <span>{t("shared.shell.ps1")}</span>{" "}
       <span className="text-blue1">
         {t("shared.shell.ps2")}
-        <span className="text-foreground">{args && ` ${t(args)}`}</span>
+        <span className="text-foreground">
+          {args && typeof args === "string" ? ` ${t(args)}` : <> {args}</>}
+        </span>
       </span>
       {!disableBliker && (
-        <span className="text-foreground animate-blink"> █</span>
+        <span className="text-foreground animate-blink">█</span>
       )}
     </span>
   );

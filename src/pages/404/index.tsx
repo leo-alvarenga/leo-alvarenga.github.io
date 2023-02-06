@@ -1,5 +1,7 @@
+import { Page } from "../../components";
+
 function NotFound() {
-  return <></>;
+  return <Page></Page>;
 }
 
 export default NotFound;
