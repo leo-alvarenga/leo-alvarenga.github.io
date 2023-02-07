@@ -12,6 +12,9 @@
           "command": "exit"
         }
       },
+      "contents": {
+        "title": "Navigate by topic"
+      },
       "projects": {
         "title": "Relevant personal projects",
         "seeMore": "See more"
@@ -22,6 +25,11 @@
     },
     "page": {
       "home": {
+        "contents": {
+          "profile": "Profile",
+          "skills": "Skills",
+          "projects": "Projects"
+        },
         "description": "CS Student at UFV, Intern Front-end Developer at Vetta, GNU/Linux enthusiast and passionate about Web development"
       },
       "404": {

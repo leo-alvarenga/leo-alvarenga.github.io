@@ -12,6 +12,9 @@
           "command": "exit"
         }
       },
+      "contents": {
+        "title": "Navegue por tópico"
+      },
       "projects": {
         "title": "Projetos pessoais relevantes",
         "seeMore": "Veja mais"
@@ -22,6 +25,11 @@
     },
     "page": {
       "home": {
+        "contents": {
+          "profile": "Perfil",
+          "skills": "Skills",
+          "projects": "Projetos"
+        },
         "description": "Graduando em Ciência da Computação pela UFV, Desenvolvedor Front-end Estagiário na Vetta, entusiasta de GNU/Linux e apaixonado por desenvolvimento Web"
       },
       "404": {

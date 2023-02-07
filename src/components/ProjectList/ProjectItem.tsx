@@ -20,7 +20,7 @@ function ProjectItem({ name, description, repo, stack }: ProjectItemProps) {
       <a
         href={repo}
         target="_blank"
-        className="flex flex-col items-start gap-3 p-4 w-[100%] h-[100%]"
+        className="flex flex-col items-start gap-3 p-4 w-full h-full"
       >
         <h3 className="text-lg">{t(name)}</h3>
         <p>{t(description)}</p>
