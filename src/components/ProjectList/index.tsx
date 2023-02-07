@@ -9,7 +9,10 @@ function ProjectList() {
 
   return (
     <>
-      <span className="w-[80%] max-xl:w-full pt-4 border-t-2 border-background text-center text-2xl">
+      <span
+        id="projects"
+        className="w-[80%] max-xl:w-full pt-4 border-t-2 border-background text-center text-2xl"
+      >
         {t("shared.projects.title")}
       </span>
       <ul className="w-[70%] max-xl:w-full flex flex-col gap-4 items-center list-none">

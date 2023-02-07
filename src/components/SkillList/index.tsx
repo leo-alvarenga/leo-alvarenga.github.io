@@ -5,6 +5,7 @@ import SkillItem from "./SkillItem";
 function SkillList() {
   return (
     <ul
+      id="skills"
       className={`
         bg-black1
         flex flex-row gap-4

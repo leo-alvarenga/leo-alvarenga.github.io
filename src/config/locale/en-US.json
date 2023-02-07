@@ -22,7 +22,12 @@
     },
     "page": {
       "home": {
-        "subtitles": "CS Student at UFV, Intern Front-end Developer at Vetta, GNU/Linux enthusiast and passionate about Web development"
+        "description": "CS Student at UFV, Intern Front-end Developer at Vetta, GNU/Linux enthusiast and passionate about Web development"
+      },
+      "404": {
+        "title": "Hey! What are you doing here?",
+        "description": "The web page you are looking for does not exist!",
+        "goBack": "Go back"
       }
     },
     "static": {

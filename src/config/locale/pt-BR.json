@@ -22,7 +22,12 @@
     },
     "page": {
       "home": {
-        "subtitles": "Graduando em Ciência da Computação pela UFV, Desenvolvedor Front-end Estagiário na Vetta, entusiasta de GNU/Linux e apaixonado por desenvolvimento Web"
+        "description": "Graduando em Ciência da Computação pela UFV, Desenvolvedor Front-end Estagiário na Vetta, entusiasta de GNU/Linux e apaixonado por desenvolvimento Web"
+      },
+      "404": {
+        "title": "Ei! O que você está fazendo aqui?",
+        "description": "A página que você está procurando não existe!",
+        "goBack": "Voltar"
       }
     },
     "static": {
