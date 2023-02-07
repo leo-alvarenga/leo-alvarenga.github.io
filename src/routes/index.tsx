@@ -4,7 +4,7 @@ import { Home, NotFound } from "../pages";
 
 function Router() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Switch>
         <Route path="/" component={Home} exact />
         <Route path="*" component={NotFound} />
