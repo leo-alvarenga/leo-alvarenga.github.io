@@ -1,0 +1,62 @@
+{
+  "locales": {
+    "shared": {
+      "shell": {
+        "ps1": "leo@portfolio",
+        "ps2": "~ $",
+        "welcome": {
+          "command": "echo \"Bem vindo(a)!\"",
+          "output": "Bem vindo(a)!"
+        },
+        "exit": {
+          "command": "exit"
+        }
+      },
+      "contents": {
+        "title": "Navegue por tópico"
+      },
+      "projects": {
+        "title": "Projetos pessoais relevantes",
+        "seeMore": "Veja mais"
+      },
+      "contacts": {
+        "title": "Entre em contato"
+      }
+    },
+    "page": {
+      "home": {
+        "contents": {
+          "profile": "Perfil",
+          "skills": "Skills",
+          "projects": "Projetos"
+        },
+        "description": "Graduando em Ciência da Computação pela UFV, Desenvolvedor Front-end Estagiário na Vetta, entusiasta de GNU/Linux e apaixonado por desenvolvimento Web"
+      },
+      "404": {
+        "title": "Ei! O que você está fazendo aqui?",
+        "description": "A página que você está procurando não existe!",
+        "goBack": "Voltar"
+      }
+    },
+    "static": {
+      "projects": {
+        "crcalc": {
+          "name": "Calculadora CR",
+          "description": "Uma Calculadora de CR (Coeficiente de Rendimento) e CRA (Coeficiente de Rendimento Acumulado)"
+        },
+        "dotfiles": {
+          "name": "Dotfiles",
+          "description": "Repositório destinado a armazenar meus arquivos de configuração de sistema"
+        },
+        "togo": {
+          "name": "To go",
+          "description": "Um app poderoso, leve e confiável baseado em linha de comando para controle de tarefas capaz de servir um front-end web localmente"
+        },
+        "uniguide": {
+          "name": "Guia do Universitário",
+          "description": "Um blog simples com foco no auxílio ao estudante universitário contruído com o MERN stack"
+        }
+      }
+    }
+  }
+}

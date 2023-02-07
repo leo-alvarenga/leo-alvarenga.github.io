@@ -1,0 +1,62 @@
+{
+  "locales": {
+    "shared": {
+      "shell": {
+        "ps1": "leo@portfolio",
+        "ps2": "~ $",
+        "welcome": {
+          "command": "echo \"Welcome!\"",
+          "output": "Welcome!"
+        },
+        "exit": {
+          "command": "exit"
+        }
+      },
+      "contents": {
+        "title": "Navigate by topic"
+      },
+      "projects": {
+        "title": "Relevant personal projects",
+        "seeMore": "See more"
+      },
+      "contacts": {
+        "title": "Contact me"
+      }
+    },
+    "page": {
+      "home": {
+        "contents": {
+          "profile": "Profile",
+          "skills": "Skills",
+          "projects": "Projects"
+        },
+        "description": "CS Student at UFV, Intern Front-end Developer at Vetta, GNU/Linux enthusiast and passionate about Web development"
+      },
+      "404": {
+        "title": "Hey! What are you doing here?",
+        "description": "The web page you are looking for does not exist!",
+        "goBack": "Go back"
+      }
+    },
+    "static": {
+      "projects": {
+        "crcalc": {
+          "name": "CR Calculator",
+          "description": "A simple CR & CRA (brazilian GPA counterpart) calculator"
+        },
+        "dotfiles": {
+          "name": "Dotfiles",
+          "description": "A repo meant to be where I store my config files"
+        },
+        "togo": {
+          "name": "To go",
+          "description": "A powerful, lightweight and reliable CLI based to-do tracker capable of serving a web front-end locally"
+        },
+        "uniguide": {
+          "name": "Uni. Student Guide",
+          "description": "A simple MERN stack blog that aims at providing relevant info to uni students"
+        }
+      }
+    }
+  }
+}
